@@ -1,4 +1,4 @@
-# Airline Database Assistant (Python)
+# Airline Database Assistant
 
 A small command-line tool I wrote for a database course. It connects to a MySQL
 database of airline flights and lets you look things up and make changes through
