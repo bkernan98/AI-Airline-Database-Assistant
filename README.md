@@ -13,18 +13,18 @@ the SQL dumps that build the flights database it runs against.
 
 The menu has seven options:
 
-1. **Find the cheapest flight** — give it a departure airport, a destination,
+1. **Find the cheapest flight**: give it a departure airport, a destination,
    and a date (`yyyy-mm-dd`), and it finds the matching flight with the lowest
    fare.
-2. **Find a customer's flight and seat** — type a name, get back their flight
+2. **Find a customer's flight and seat**: type a name, get back their flight
    number and seat.
-3. **List an airline's non-stop flights** — type an airline name, get every
+3. **List an airline's non-stop flights**: type an airline name, get every
    one of its single-leg (no stops) flights.
-4. **Add a new airplane** — enter the seat count and type; it picks the next
+4. **Add a new airplane**: enter the seat count and type; it picks the next
    free ID automatically and inserts it.
-5. **Bump up low-cost fares** — raise every fare of $200 or less by a factor
+5. **Bump up low-cost fares**: raise every fare of $200 or less by a factor
    you choose (e.g. `0.2` for +20%), and it reports how many it changed.
-6. **Remove a seat reservation** — give a flight number and a customer name,
+6. **Remove a seat reservation**: give a flight number and a customer name,
    and it frees up the seat.
 7. **Exit.**
 
