@@ -2,7 +2,7 @@
 
 A small command-line tool I wrote for a database course. It connects to a MySQL
 database of airline flights and lets you look things up and make changes through
-a simple numbered menu — find the cheapest flight, look up a customer's
+a simple numbered menu. Find the cheapest flight, look up a customer's
 reservation, add an airplane, and so on. You run it in a terminal, pick an
 option, and it asks for whatever details it needs and prints the result.
 
@@ -28,7 +28,7 @@ The menu has seven options:
    and it frees up the seat.
 7. **Exit.**
 
-Options 1–3 only read. Options 4–6 actually change the database and commit the
+Options 1-3 only read. Options 4-6 actually change the database and commit the
 change, so those edits stick.
 
 ## The database
@@ -37,21 +37,21 @@ The sql files are MySQL dumps from my flights database, one per table, that crea
 table and load it with sample data. Together they make up the schema the tool
 runs against:
 
-* airport — airport codes with name, city, and state.
-* airplane_type — each model (737, A320, CRJ700, …) with its max seats
+* airport - airport codes with name, city, and state.
+* airplane_type - each model (737, A320, CRJ700, …) with its max seats
 and manufacturer.
-* airplane — individual planes: an ID, seat count, and which type it is.
-can_land — which airplane types are cleared to land at which airports.
-* flight — flight numbers, the airline that runs them, and whether they
+* airplane - individual planes: an ID, seat count, and which type it is.
+can_land - which airplane types are cleared to land at which airports.
+* flight - flight numbers, the airline that runs them, and whether they
 fly on weekdays.
-* flight_leg — the scheduled legs that make up each flight (departure and
+* flight_leg - the scheduled legs that make up each flight (departure and
 arrival airports plus scheduled times). A flight with more than one leg makes
 a stop; a flight with exactly one leg is non-stop.
-* leg_instance — an actual dated run of a leg: the date, seats still
+* leg_instance - an actual dated run of a leg: the date, seats still
 available, which airplane is assigned, and the real departure/arrival times.
-* fare — the fare for each flight: a code (L/Y/B/F), the amount, and
+* fare - the fare for each flight: a code (L/Y/B/F), the amount, and
 whether it has restrictions.
-* seat_reservation — who's booked what: flight, leg, date, seat number,
+* seat_reservation - who's booked what: flight, leg, date, seat number,
 and the customer's name and phone.
 
 
